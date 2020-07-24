@@ -1,4 +1,4 @@
-//JavaScript Flappy Bird Extreme 2.0
+//JavaScript Flappy Bird 2.0
 //Created with p5.js Web Editor
 //Creator: Chris Berger
 //Created on April 8, 2020
