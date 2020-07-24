@@ -3,7 +3,6 @@
 //Creator: Chris Berger
 //Created on April 8, 2020
 //Inspired by: Daniel Shiffman (The Coding Train)
-//This is a new comment
 
 
 let bird;
