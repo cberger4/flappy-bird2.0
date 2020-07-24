@@ -36,7 +36,7 @@ function draw() {
 
 
   if (frameCount % 80 == 0) {
-    switch (this.pipeType) {
+    switch (pipeType) {
       case 1:
         pipe.push(new Pipe());
         break;
@@ -83,7 +83,8 @@ function draw() {
     fill(0);
     textSize(40);
     textAlign(CENTER, CENTER);
-    text("Game Over!", width / 2, height / 2)
+    text("Game Over!", width / 2, height / 2);
+    text("Press SPACE to restart!", width / 2, height / 2 + 75);
   }
 
 
@@ -97,5 +98,15 @@ function draw() {
 function keyPressed() {
   if (key == ' ') {
     bird.up();
+    if (lose) reset();
   }
+}
+
+function reset() {
+  lose = false;
+  pipe = [];
+  score = 0;
+  bird = new Bird();
+  loop();
+
 }
